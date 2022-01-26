@@ -16,5 +16,7 @@ def index():
     5. If both names are provided: respond with a question, "Is your name <fist-name> <second-name>
     """
     name= request.args.get("name")
+    if not name:
+        return jsonify({"error": "Proporciona un nombre"})
     response = {"data": f"Hello, {name}!"}
     return jsonify(response)

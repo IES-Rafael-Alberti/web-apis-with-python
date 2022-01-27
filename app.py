@@ -12,7 +12,7 @@ def index():
     This method will
     1. Provide usage instructions formatted as JSON
     """
-    response = {"usage": "/dict?=<word>"}
+    response = {"usage": "/dict?word=<word>"}
     return jsonify(response)
 
 

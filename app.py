@@ -12,7 +12,7 @@ def index():
     This method will
     1. Provide usage instructions formatted as JSON
     """
-    # response = {"usage": "/dict?=<word>"}
+    # response = {"usage": "/dict?word=<word>"}
     # Since this is a website with front-end, we don't need to send the usage instructions
     return render_template("index.html")
 
